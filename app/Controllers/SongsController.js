@@ -38,7 +38,13 @@ export default class SongsController {
      * Takes in a song id and sends it to the service in order to add it to the users playlist
      * @param {string} id
      */
-    addSong(id) {}
+    async addSong(id) {
+        try {
+            await songService.addSong(id)
+        } catch (error) {
+            console.log(error, "error in the addSong")
+        }
+    }
 
     /**
      * Takes in a song id to be removed from the users playlist and sends it to the server

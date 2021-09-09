@@ -18,7 +18,7 @@ export default class Song {
                 <h6>${this.title}</h5>
                 <p>${this.artist}</p>
                 <div class="d-flex justify-content-center">
-                <button class="btn btn-primary">add to playlist</button>
+                <button class="btn btn-primary" onclick="app.songsController.addSong(${this._id})">add to playlist</button>
                 </div>
         </div>
         `;

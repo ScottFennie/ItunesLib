@@ -15,16 +15,13 @@
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">music-is-fun</span>
+                <span class="ml-2">Cool-Music!</span>
             </a>
         </nav>
     </header>
     <main class="container-fluid">
         <section class="row">
             <div class="col-12 bannerStyle">
-                <p>Music is Fun</p>
-            </div>
-            <div class="offset-8 col-4">
                 <form onsubmit="app.songsController.search(event)">
                     <input type="text" class="form-control" name="query" placeholder="Search For Music" />
                     <button class="btn btn-success mt-1 form-control" type="submit">
@@ -34,20 +31,19 @@
             </div>
         </section>
 
-        <section class="row">
-            <div class="col-6">
-                <h3 class="text-center">Search Results</h3>
-                <div id="songs" class="col-12 m-0">
-                    <!-- template to generate -->
-                </div>
+        <div class="row">
+            <div class="our-playlist col-4">
+                <h1 class="text-center">Testing Playlist</h1>
             </div>
-            <div class="col-6">
-                <h3 class="text-center">Playlist</h3>
-                <div class="col-12 m-0" id="playlist">
-                    <!-- template for playlist -->
+            <section class="col-8">
+                <h1 class="text-center">Search Results</h1>
+                <div class="row" id="songs">
+                    <!-- search results go here -->
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
+
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
@@ -57,10 +53,8 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
-        integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js" integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
